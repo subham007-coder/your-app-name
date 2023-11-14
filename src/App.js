@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 const images = [
   "https://images.pexels.com/photos/3836292/pexels-photo-3836292.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
   "https://images.pexels.com/photos/2792157/pexels-photo-2792157.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
@@ -30,9 +29,6 @@ function App() {
         <div className="left-arrow" onClick={prevSlide}>
           ⬅
         </div>
-        <div className="right-arrow" onClick={nextSlide}>
-          ⮕
-        </div>
         {images.map(
           (image, index) =>
             current === index && (
@@ -41,6 +37,9 @@ function App() {
               </div>
             )
         )}
+        <div className="right-arrow" onClick={nextSlide}>
+          ⮕
+        </div>
       </div>
     </div>
   );
