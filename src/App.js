@@ -8,7 +8,6 @@ const images = [
   "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
 ];
 
-
 export default App;
 
 function App() {
